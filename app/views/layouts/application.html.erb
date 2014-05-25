@@ -1,14 +1,44 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>App</title>
+  <title>Sistemas y Suministros</title>
   <%= stylesheet_link_tag    "application", media: "all", "data-turbolinks-track" => true %>
   <%= javascript_include_tag "application", "data-turbolinks-track" => true %>
   <%= csrf_meta_tags %>
+
+  <link href='http://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
 </head>
 <body>
+	<div class="navbar navbar-inverse navbar-fixed-top header" role="navigation">
+         
+            <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                      <span class="sr-only">Toggle navigation</span>
+                      <span class="icon-bar"></span>
+                      <span class="icon-bar"></span>
+                      <span class="icon-bar"></span>
+                    </button>
 
+                    <%= link_to 'Sistemas y Suministros', root_path, id:"nav", class: "navbar-brand" %>
+                    <%=image_tag("logosys.png" , class:"img-responsive" , alt:"Responsive image")%>
+            </div>
+            <div class="navbar-collapse collapse">
+                    <ul class="nav navbar-nav pull-right">
+                      <li class="<%= navMainActive('home')%>"><%= link_to 'Home', root_path %></li>
+                      <li class="<%= navMainActive('flashlights')%>"> <%= link_to 'Linternas', '' %></li>
+                      <li class="<%= navMainActive('companies')%>"><%= link_to 'Empresas', '' %></li>
+                      <li class="<%= navMainActive('about')%>"><%= link_to 'Quiénes Somos', '' %></li> 
+                      <li class="<%= navMainActive('fenix')%>"><%= link_to 'Fenix', '' %></li>          
+                    
+                    </ul>
+            </div>
+    </div>
+
+<div class="container-group">
+    <div class="container-fluid" >
 <%= yield %>
+	</div>
+</div>
 
 </body>
 </html>
