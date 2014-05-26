@@ -1,19 +1,12 @@
  /*
- *= require_self
- *= require_tree .
+
+
  */
+
 @import "bootstrap";
 
 body{
 	margin:0;
-}
-.navbar {
-margin-bottom: 0;
-border: 0;
-}
-
-.navbar-inverse{
-	background-image: linear-gradient(to bottom,#0C0D1F 0,#062340 100%);
 }
 
 .container-group{
