@@ -3,8 +3,14 @@
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
 .info-home{
-	padding-top: 100px;
+	padding-top: 80px;
 	margin-bottom: 80px;
+	margin-left:5%;
+
+	image{
+		padding-top: 10px;
+		margin-bottom:30px;
+	}
 }
 
 .description{
@@ -38,4 +44,40 @@
 
 .users{
 	margin: 10px;
+}
+
+.featured-home{
+	padding-top: 50px;
+	padding-left: 2%;
+	margin-bottom: 25px;
+	text-align: center;
+	color: #fff;
+
+	h2{
+		color:#062340;
+		text-shadow: 2px 2px #666;
+	}
+
+}
+
+
+.product{
+	padding: 10px;
+
+	img{
+		width: 70%;
+	}
+}
+
+.info-product{
+			background-color: #000;
+			position: relative;
+			margin: 0 auto;
+			display: inline;
+			text-align: center;
+			width: 70%;
+			float: left;
+			border:1px solid #fff;
+		
+
 }
