@@ -2,3 +2,40 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
+.info-home{
+	padding-top: 100px;
+	margin-bottom: 80px;
+}
+
+.description{
+	padding: 10px;
+	background-color: rgba(0,0,0,0.5);
+	color:#fff;
+	font-size: 16px;
+	font-style: bold;
+	text-align: center;
+}
+
+.zone_buttons{
+	margin: o auto;
+}
+
+.button{
+			background-color: #000;
+			position: relative;
+			margin: 0 auto;
+			display: inline;
+			margin-top: 3px;
+			text-align: center;
+			padding-top: 10px;
+			padding-bottom: 10px;
+			width: 40%;
+			float: left;
+			left:10%;
+			border:1px solid #fff;
+
+}
+
+.users{
+	margin: 10px;
+}
