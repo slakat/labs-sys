@@ -1,5 +1,10 @@
 class ProductsController < ApplicationController
-  before_action :set_product, only: [:show, :edit, :update, :destroy]
+  before_action :set_product, only: [:edit, :update, :destroy]
+
+
+  def category
+    @products = Product.all
+  end
 
   # GET /products
   # GET /products.json
