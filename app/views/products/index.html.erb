@@ -1,33 +1,111 @@
-<h1>Listing products</h1>
+<div class="productos">
+<h1>>Productos</h1>
 
-<table>
-  <thead>
-    <tr>
-      <th>Type</th>
-      <th>Model</th>
-      <th>Name</th>
-      <th>Description</th>
-      <th></th>
-      <th></th>
-      <th></th>
-    </tr>
-  </thead>
+  <div class="cat-info col-md-4">
+    <p>Descripción aquí</p>
 
-  <tbody>
-    <% @products.each do |product| %>
+  </div>
+
+  <div class="col-md-8 opciones-bg">
+    
+    <div class="cat col-md-4">
+      <img src="http://placehold.it/291x120"/>
+      <p>COMPRESORES</p>
+    </div>
+
+        <div class="cat col-md-4">
+      <img src="http://placehold.it/291x120"/>
+      <p>VENTILADORES</p>
+    </div>
+
+        <div class="cat col-md-4">
+          <img src="http://placehold.it/291x120"/>
+      <p>FILTROS</p>
+    </div>
+
+        <div class="cat col-md-4">
+          <img src="http://placehold.it/291x120"/>
+      <p>ACEITES</p>
+    </div>
+
+        <div class="cat col-md-4">
+          <img src="http://placehold.it/291x120"/>
+      <p>TERMOSTATOS</p>
+    </div>
+
+        <div class="cat col-md-4">
+          <img src="http://placehold.it/291x120"/>
+      <p>CIERRES Y BISAGRAS</p>
+    </div>
+
+        <div class="cat col-md-4">
+          <img src="http://placehold.it/291x120"/>
+      <p>ASISLACIÓN TÉRMICA</p>
+    </div>
+
+        <div class="cat col-md-4">
+          <img src="http://placehold.it/291x120"/>
+      <p>HERRAMIENTAS</p>
+    </div>
+
+        <div class="cat col-md-4">
+          <img src="http://placehold.it/291x120"/>
+      <p>VÁLVULAS</p>
+    </div>
+
+        <div class="cat col-md-4">
+          <img src="http://placehold.it/291x120"/>
+      <p>EVAPORADORES</p>
+    </div>
+
+        <div class="cat col-md-4">
+          <img src="http://placehold.it/291x120"/>
+      <p>CONDENSADORES</p>
+    </div>
+
+        <div class="cat col-md-4">
+          <img src="http://placehold.it/291x120"/>
+      <p>GASES REFRIGERANTES</p>
+    </div>
+
+
+  </div>
+
+
+
+
+
+<!--   <h1>Listing products</h1>
+
+  <table>
+    <thead>
       <tr>
-        <td><%= product.type %></td>
-        <td><%= product.model %></td>
-        <td><%= product.name %></td>
-        <td><%= product.description %></td>
-        <td><%= link_to 'Show', product %></td>
-        <td><%= link_to 'Edit', edit_product_path(product) %></td>
-        <td><%= link_to 'Destroy', product, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+        <th>Type</th>
+        <th>Model</th>
+        <th>Name</th>
+        <th>Description</th>
+        <th></th>
+        <th></th>
+        <th></th>
       </tr>
-    <% end %>
-  </tbody>
-</table>
+    </thead>
 
-<br>
+    <tbody>
+      <% @products.each do |product| %>
+        <tr>
+          <td><%= product.type %></td>
+          <td><%= product.model %></td>
+          <td><%= product.name %></td>
+          <td><%= product.description %></td>
+          <td><%= link_to 'Show', product %></td>
+          <td><%= link_to 'Edit', edit_product_path(product) %></td>
+          <td><%= link_to 'Destroy', product, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+        </tr>
+      <% end %>
+    </tbody>
+  </table>
 
-<%= link_to 'New Product', new_product_path %>
+  <br>
+
+  <%= link_to 'New Product', new_product_path %>  -->                             
+</div>

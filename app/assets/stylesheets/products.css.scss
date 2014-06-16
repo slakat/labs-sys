@@ -1,3 +1,78 @@
 // Place all the styles related to the Products controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+.container-group{
+	background: #fff;
+}
+
+.productos{
+	margin-top:50px;
+}
+
+.opciones-bg{
+	background: url('opciones-bg.jpg');
+	border:5px solid #fff;
+	padding-left: 0;
+	padding-right: 0;
+	background-size: cover;
+	margin-bottom:20px;
+}
+
+.cat{
+	height:120px;
+	border:5px solid #fff;
+	overflow: hidden;
+
+	p{
+		text-align: center;
+		font-size: 25px;
+		background: rgba(0,0,0,.2);
+		color: #fff;
+		margin-top: 15%;
+		text-align: center;
+		padding-top: 10px;
+		height: 55%;
+		line-height: 0.9;
+
+	}
+}
+
+
+.cat{
+  -webkit-transition: 0.3s;
+  -moz-transition: 0.3s;
+  -ms-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s;     
+}
+
+.cat img {
+margin-left:-310px;
+float: left;
+}
+.cat:hover img {
+	margin-left:-15px;
+	 p{
+	 	display: none;
+	 }
+}
+
+.cat img, p {
+-webkit-transition: all 0.7s ease;
+transition: all 0.7s ease;
+}
+
+.cat-info{
+	background: #000;
+	height: 350px;
+	margin-top: 70px;
+	width: 350px;
+	margin-right: 50px;
+
+	p{
+		font-size: 20px;
+		color: #fff;
+		margin: 20px;
+	}
+}
