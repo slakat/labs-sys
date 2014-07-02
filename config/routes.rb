@@ -1,6 +1,8 @@
 App::Application.routes.draw do
   resources :products
 
+  match '/index_category', to: 'products#index_category', via: 'get'
+
   get "pages/index"
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
@@ -13,6 +15,8 @@ App::Application.routes.draw do
   get 'categoria' => 'products#category', as: :category_path
 
   get 'show' => 'products#show', as: :show_path
+
+
 
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'

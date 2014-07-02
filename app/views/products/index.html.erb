@@ -1,3 +1,4 @@
+<div id="holder">
 <div class="productos">
 <h1>>Productos</h1>
 
@@ -9,7 +10,8 @@
   <div class="col-md-8 opciones-bg">
     
     <div class="cat col-md-4">
-      <a href="/categoria"><img src="http://placehold.it/291x120"/></a>
+
+      <%= link_to image_tag("http://placehold.it/291x120" ), :controller => "products", :action => "index_category", :cat => "com" , remote:true  %>
       <p>COMPRESORES</p>
     </div>
 
@@ -108,4 +110,5 @@
   <br>
 
   <%= link_to 'New Product', new_product_path %>  -->                             
+</div>
 </div>

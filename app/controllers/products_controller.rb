@@ -12,6 +12,14 @@ class ProductsController < ApplicationController
     @products = Product.all
   end
 
+  def index_category
+    @tipo= Product.where(:type=>params[:cat])
+     respond_to do |format|
+        format.html{redirect_to "index"}
+        format.js{}
+    end
+  end
+
   # GET /products/1
   # GET /products/1.json
   def show
