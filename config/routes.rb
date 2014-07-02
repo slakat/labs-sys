@@ -1,7 +1,8 @@
 App::Application.routes.draw do
-  resources :products
+  resources :categories
 
-  match '/index_category', to: 'products#index_category', via: 'get'
+
+  match '/index_category', to: 'categories#index_category', via: 'get'
 
   get "pages/index"
   # The priority is based upon order of creation: first created -> highest priority.
@@ -10,11 +11,11 @@ App::Application.routes.draw do
   # You can have the root of your site routed with "root"
   root 'pages#index'
 
-   get 'productos' => 'products#index', as: :products_path
+  #get 'productos' => 'products#index', as: :products_path
 
-  get 'categoria' => 'products#category', as: :category_path
+  #get 'categoria' => 'products#category', as: :category_path
 
-  get 'show' => 'products#show', as: :show_path
+  #get 'show' => 'products#show', as: :show_path
 
 
 

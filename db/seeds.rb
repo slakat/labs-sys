@@ -5,3 +5,16 @@
 #
 #   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
 #   Mayor.create(name: 'Emanuel', city: cities.first)
+
+#type_list = [
+#	["com" , "her"],
+#	["com", "scr"],
+#	["com", "fra"]
+#]
+
+#type_list.each do |type, model|
+#  Category.create( type:type,model:model , image:"Null")
+#end
+
+
+Category.create('', '')
