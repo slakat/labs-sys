@@ -13,5 +13,12 @@
 </div>
 
 <% types.each do |type| %>
+<div>
+<div>
+ <%= image_tag type.image_url.to_s%>
+ <%= type.image%>
  <%= type.model%>
+
+</div>
+</div>
 <% end %>

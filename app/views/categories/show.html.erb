@@ -2,18 +2,20 @@
 
 <p>
   <strong>Type:</strong>
-  <%= @category.type %>
+  <%= @category.model %>
 </p>
 
 <p>
   <strong>Model:</strong>
-  <%= @category.model %>
+  <%= @category.sub_model %>
 </p>
 
 <p>
   <strong>Image:</strong>
   <%= @category.image %>
 </p>
+
+<%= image_tag @category.image_url.to_s%>
 
 <%= link_to 'Edit', edit_category_path(@category) %> |
 <%= link_to 'Back', categories_path %>

@@ -9,7 +9,7 @@ class CategoriesController < ApplicationController
 
 
   def index_category
-    @type= Category.where(:type=>params[:cat])
+    @type= Category.where(:model=>params[:cat])
      respond_to do |format|
         format.html{redirect_to "index"}
         format.js{}
@@ -78,6 +78,6 @@ class CategoriesController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def category_params
-      params.require(:category).permit(:model, :sub_model, :image)
+      params.require(:category).permit(:model, :sub_model, :image ,  :remote_image_url)
     end
 end

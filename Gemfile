@@ -5,12 +5,13 @@ gem 'rails', '4.0.0'
 
 
 group :development do
-
-  # Use sqlite3 as the database for Active Record
+	gem 'better_errors'
+	gem 'quiet_assets'
+  	# Use sqlite3 as the database for Active Record
 	gem 'sqlite3'
 
 end
-
+gem 'carrierwave'
 gem 'bootstrap-sass'
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 4.0.0'
