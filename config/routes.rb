@@ -1,6 +1,8 @@
 App::Application.routes.draw do
   resources :categories
 
+  resources :categories
+
 
   match '/index_category', to: 'categories#index_category', via: 'get'
 

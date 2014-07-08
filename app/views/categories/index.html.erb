@@ -16,57 +16,57 @@
     </div>
 
         <div class="cat col-md-4">
-      <img src="http://placehold.it/291x120"/>
+      <%= link_to image_tag("http://placehold.it/291x120" ), :controller => "categories", :action => "index_category", :cat => "ven" , remote:true  %>
       <p>VENTILADORES</p>
     </div>
 
         <div class="cat col-md-4">
-          <img src="http://placehold.it/291x120"/>
+          <%= link_to image_tag("http://placehold.it/291x120" ), :controller => "categories", :action => "index_category", :cat => "fil" , remote:true  %>
       <p>FILTROS</p>
     </div>
 
         <div class="cat col-md-4">
-          <img src="http://placehold.it/291x120"/>
+          <%= link_to image_tag("http://placehold.it/291x120" ), :controller => "categories", :action => "index_category", :cat => "ace" , remote:true  %>
       <p>ACEITES</p>
     </div>
 
         <div class="cat col-md-4">
-          <img src="http://placehold.it/291x120"/>
+          <%= link_to image_tag("http://placehold.it/291x120" ), :controller => "categories", :action => "index_category", :cat => "ter" , remote:true  %>
       <p>TERMOSTATOS</p>
     </div>
 
         <div class="cat col-md-4">
-          <img src="http://placehold.it/291x120"/>
+          <%= link_to image_tag("http://placehold.it/291x120" ), :controller => "categories", :action => "index_category", :cat => "cyb" , remote:true  %>
       <p>CIERRES Y BISAGRAS</p>
     </div>
 
         <div class="cat col-md-4">
-          <img src="http://placehold.it/291x120"/>
+          <%= link_to image_tag("http://placehold.it/291x120" ), :controller => "categories", :action => "index_category", :cat => "ais" , remote:true  %>
       <p>ASISLACIÓN TÉRMICA</p>
     </div>
 
         <div class="cat col-md-4">
-          <img src="http://placehold.it/291x120"/>
+          <%= link_to image_tag("http://placehold.it/291x120" ), :controller => "categories", :action => "index_category", :cat => "her" , remote:true  %>
       <p>HERRAMIENTAS</p>
     </div>
 
         <div class="cat col-md-4">
-          <img src="http://placehold.it/291x120"/>
+          <%= link_to image_tag("http://placehold.it/291x120" ), :controller => "categories", :action => "index_category", :cat => "val" , remote:true  %>
       <p>VÁLVULAS</p>
     </div>
 
         <div class="cat col-md-4">
-          <img src="http://placehold.it/291x120"/>
+          <%= link_to image_tag("http://placehold.it/291x120" ), :controller => "categories", :action => "index_category", :cat => "eva" , remote:true  %>
       <p>EVAPORADORES</p>
     </div>
 
         <div class="cat col-md-4">
-          <img src="http://placehold.it/291x120"/>
+          <%= link_to image_tag("http://placehold.it/291x120" ), :controller => "categories", :action => "index_category", :cat => "con" , remote:true  %>
       <p>CONDENSADORES</p>
     </div>
 
         <div class="cat col-md-4">
-          <%=image_tag("Refrigerantes.jpg" , alt:"Responsive image")%>
+          <%= link_to image_tag("http://placehold.it/291x120" ), :controller => "categories", :action => "index_category", :cat => "gas" , remote:true  %>
       <p>GASES REFRIGERANTES</p>
     </div>
 
@@ -75,3 +75,38 @@
                            
 </div>
 </div>
+
+
+<h1>Listing categories</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Model</th>
+      <th>Sub model</th>
+      <th>Description</th>
+      <th>Image</th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @categories.each do |category| %>
+      <tr>
+        <td><%= category.model %></td>
+        <td><%= category.sub_model %></td>
+        <td><%= category.description %></td>
+        <td><%= category.image %></td>
+        <td><%= link_to 'Show', category %></td>
+        <td><%= link_to 'Edit', edit_category_path(category) %></td>
+        <td><%= link_to 'Destroy', category, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Category', new_category_path %>

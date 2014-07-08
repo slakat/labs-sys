@@ -1,11 +1,13 @@
 # Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
 
 one:
-  type: 
   model: MyString
+  sub_model: MyString
+  description: MyString
   image: MyString
 
 two:
-  type: 
   model: MyString
+  sub_model: MyString
+  description: MyString
   image: MyString

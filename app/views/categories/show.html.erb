@@ -1,21 +1,24 @@
 <p id="notice"><%= notice %></p>
 
 <p>
-  <strong>Type:</strong>
+  <strong>Model:</strong>
   <%= @category.model %>
 </p>
 
 <p>
-  <strong>Model:</strong>
+  <strong>Sub model:</strong>
   <%= @category.sub_model %>
+</p>
+
+<p>
+  <strong>Description:</strong>
+  <%= @category.description %>
 </p>
 
 <p>
   <strong>Image:</strong>
   <%= @category.image %>
 </p>
-
-<%= image_tag @category.image_url.to_s%>
 
 <%= link_to 'Edit', edit_category_path(@category) %> |
 <%= link_to 'Back', categories_path %>

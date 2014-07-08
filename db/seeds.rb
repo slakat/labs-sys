@@ -7,14 +7,15 @@
 #   Mayor.create(name: 'Emanuel', city: cities.first)
 
 type_list = [
-	["com" , "sher","https://dl-web.dropbox.com/get/FotosSyS/compresorSH.jpg?_subject_uid=249217926&w=AAD3vrG6MvObZ8a_oXh9FFBlir7nVPZmhaybLDlg93XInA"]
-	#["com" , "her" ,"compresorH.jpg"],
-	#["com", "scr","compresorSCroll.jpg"],
-	#["com", "fra" ,"compresorFrac.png"]
+	["com" , "sher","com/compresorSH.jpg"],
+	["com" , "her" ,"com/compresorH.jpg"],
+	["com", "scr","com/compresorSCroll.jpg"],
+	["com", "fra" ,"com/compresorFrac.png"],
+	["eva", "eva" ,"evap/evap1.png"]
 ]
 
 type_list.each do |model, sub_model , image|
-  Category.create( model:model, sub_model:sub_model, remote_image_url:image)
+  Category.create( model:model, sub_model:sub_model, description:"una descripcion" ,image:image)
 end
 
 
