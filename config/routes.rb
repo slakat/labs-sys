@@ -1,10 +1,13 @@
 App::Application.routes.draw do
+  resources :products
+
   resources :categories
 
   resources :categories
 
 
   match '/index_category', to: 'categories#index_category', via: 'get'
+  match '/index_product', to: 'categories#index_product', via: 'get'
 
   get "pages/index"
   # The priority is based upon order of creation: first created -> highest priority.

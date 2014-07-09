@@ -16,6 +16,14 @@ class CategoriesController < ApplicationController
     end
   end
 
+  def index_product
+    @products= params[:cat].products
+     respond_to do |format|
+        format.html{redirect_to "index"}
+        format.js{}
+    end
+  end
+
   # GET /categories/1
   # GET /categories/1.json
   def show

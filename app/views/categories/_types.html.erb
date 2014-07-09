@@ -18,6 +18,7 @@
  <%= image_tag type.image%>
  <%= type.image%>
  <%= type.model%>
+ <%= link_to "Productos", :controller => "categories", :action => "index_product", :type => type , remote:true  %>
 
 </div>
 </div>
