@@ -83,7 +83,7 @@ transition: all 0.7s ease;
 }
 
 .types{
-	background: url('cat-1-01.png');
+	background: rgba(39,62,84,.9); 
 	height:150px;
 	width: 610px;
 	border:5px solid #fff;
@@ -93,11 +93,44 @@ transition: all 0.7s ease;
 }
 
 .types img {
-	display: none;
+    background: white;
+	width:150px;
+	height:150px;
+	float:left;
+	position: relative;
+	opacity: 0.1;
+	  -webkit-transition: 0.3s;
+  -moz-transition: 0.3s;
+  -ms-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s;  
 	}
-.types:hover img {
+
+.types img:hover {
 	display: block;
+	opacity: 1;
 }
+
+.h{
+background: rgba(39,62,84,0.1);
+overflow: hidden;
+height: 150px;
+position: absolute;
+width: 150px;
+bottombottom:0px; /* position will be on bottom */  
+left:0px;  
+  -webkit-transition: 0.3s;
+  -moz-transition: 0.3s;
+  -ms-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s;  
+
+}
+
+.h:hover{
+ left:-100px;
+}
+
 
 .info-type{
 	margin: 0 auto;
@@ -122,3 +155,5 @@ transition: all 0.7s ease;
 		color: #fff;
 	}
 }
+
+
