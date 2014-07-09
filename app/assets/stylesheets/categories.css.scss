@@ -47,6 +47,7 @@
 }
 
 .cat img {
+background: white;
 margin-left:-310px;
 float: left;
 width:0;
@@ -54,6 +55,7 @@ width:0;
 .cat:hover img {
 	margin-left:-15px;
 	width: 291px;
+	height: 120px;
 	 p{
 	 	display: none;
 	 }
@@ -83,7 +85,7 @@ transition: all 0.7s ease;
 }
 
 .types{
-	background: url('cat-1-01.png');
+	background: rgba(39,62,84,.9); 
 	height:150px;
 	width: 610px;
 	border:5px solid #fff;
@@ -93,11 +95,25 @@ transition: all 0.7s ease;
 }
 
 .types img {
-	display: none;
+    background: white;
+	width:150px;
+	height:150px;
+	float:left;
+	position: relative;
+	opacity: 0.1;
+	  -webkit-transition: 0.3s;
+  -moz-transition: 0.3s;
+  -ms-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s;  
 	}
-.types:hover img {
+
+.types img:hover {
 	display: block;
+	opacity: 1;
 }
+
+
 
 .info-type{
 	margin: 0 auto;
@@ -122,3 +138,5 @@ transition: all 0.7s ease;
 		color: #fff;
 	}
 }
+
+
