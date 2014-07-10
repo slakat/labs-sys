@@ -11,6 +11,9 @@ group :development do
 	gem 'sqlite3'
 
 end
+
+gem 'sqlite3'
+
 gem 'carrierwave'
 gem 'bootstrap-sass'
 # Use SCSS for stylesheets
