@@ -3,7 +3,7 @@
 
 <div class="types">
 	<% types.each do |type| %>
-		<%= image_tag type.image %>
+		<%= link_to (image_tag type.image), :controller => "categories", :action => "index_product", :typeID => type.id , remote:true  %>
 
 
  	<% end %>
@@ -20,6 +20,8 @@
 
 </div>
 
+
+<!--
 <% types.each do |type| %>
 <div>
 <div>
@@ -30,4 +32,4 @@
 
 </div>
 </div>
-<% end %>
+<% end %>-->
