@@ -1,8 +1,6 @@
 
-//var $frame=$("#holder");
-//$frame.empty();
+var $frame=$("#holder");
+$frame.empty();
 
 
-alert("Aqui llego");
- 
-//$frame.append('<%= escape_javascript render partial: "types" , object: @type %>');
+$frame.append('<%= escape_javascript render partial: "product" , object: @products %>');

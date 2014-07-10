@@ -19,3 +19,15 @@ type_list.each do |model, sub_model , image|
 end
 
 
+product_list = [
+	["Prod 1" , 100,"", 1 , "Buen Prod"],
+	["Prod 2" , 100 ,"" ,1 , "Buen Prod"],
+	["Prod 3", 100 ,"", 1 , "Buen Prod"],
+	["Prod 4", 100 ,"" ,2 , "Buen Prod"],
+	["Prod 5", 100 , "" , 2 , "Buen Prod"]
+]
+
+product_list.each do |name, price , image , category_id , description|
+  Product.create( name:name, price:price ,image:image , category_id:category_id , description:description)
+end
+

@@ -17,7 +17,7 @@ class CategoriesController < ApplicationController
   end
 
   def index_product
-    @products= params[:cat].products
+    @products= Product.where(:category_id=>params[:typeID])
      respond_to do |format|
         format.html{redirect_to "index"}
         format.js{}
