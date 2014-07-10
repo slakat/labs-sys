@@ -8,11 +8,9 @@ group :development do
 	gem 'better_errors'
 	gem 'quiet_assets'
   	# Use sqlite3 as the database for Active Record
-	gem 'sqlite3'
+	gem 'sqlite3', '~> 1.3.9'
 
 end
-
-gem 'sqlite3'
 
 gem 'carrierwave'
 gem 'bootstrap-sass'
