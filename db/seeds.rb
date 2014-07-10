@@ -11,7 +11,11 @@ type_list = [
 	["com" , "her" ,"com/compresorH.jpg"],
 	["com", "scr","com/compresorSCroll.jpg"],
 	["com", "fra" ,"com/compresorFrac.png"],
-	["eva", "eva" ,"evap/evap1.png"]
+	["eva", "eva" ,"evap/evap1.png"],
+	["con", "con" ,"cond/con1.png"],
+	["fil", "dml" , "fil/filtrodml.png"],
+	["fil", "dlc" , "fil/filtrodlc.png"],
+	["ven" , "ven", "ven/ven1.png"]
 ]
 
 type_list.each do |model, sub_model , image|
