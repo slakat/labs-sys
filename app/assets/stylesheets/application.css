@@ -18,7 +18,8 @@ border: 0;
 }
 
 .content-home{
-	background:asset-url('background.jpg'); 
+	background: asset-url('background.jpg'); 
+	background: asset-url('opciones-bg.jpg');
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
 	-o-background-size: cover;
