@@ -33,3 +33,11 @@ function descriptionChecked(v){
 		r.innerHTML = h;
 
 }
+
+function changeBread(){
+
+	var b=$(".bread")[0];
+	b.innerHTML = ">> algo";
+
+
+}

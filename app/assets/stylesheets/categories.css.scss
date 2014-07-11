@@ -86,7 +86,6 @@ transition: all 1.0s ease;
 }
 
 .types{
-	background: rgba(39,62,84,.9); 
 	height:200px;
 	width: 810px;
 	border:5px solid #fff;
@@ -95,6 +94,7 @@ transition: all 1.0s ease;
 	margin-top: 50px;
 
 	.imgType{
+		background: rgba(39,62,84,.9); 
 	p{display: none;}
 }
 
@@ -147,4 +147,7 @@ transition: all 1.0s ease;
 	}
 }
 
+.bread{
+	margin-top: 70px;
 
+}
