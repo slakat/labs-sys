@@ -47,22 +47,24 @@
 
 .cat img {
 background: white;
-margin-left:-310px;
+margin-left: -310px;
 float: left;
-width:0;
+height: 120px;
+width: 291px;
 }
 .cat:hover img {
 	margin-left:-15px;
 	width: 291px;
 	height: 120px;
+	display: block;
 	 p{
 	 	display: none;
 	 }
 }
 
 .cat img, p {
--webkit-transition: all 0.7s ease;
-transition: all 0.7s ease;
+-webkit-transition: all 1.0s ease;
+transition: all 2.7s ease;
 }
 
 .cat-info{
@@ -91,6 +93,11 @@ transition: all 0.7s ease;
 	overflow: hidden;
 	margin: 0 auto;
 	margin-top: 50px;
+
+	.imgType{
+	p{display: none;}
+}
+
 }
 
 .types img {
@@ -130,6 +137,9 @@ transition: all 0.7s ease;
 		color: #fff;
 	}
 }
+
+
+
 
 .products-cat{
 	margin-top: 100px;
