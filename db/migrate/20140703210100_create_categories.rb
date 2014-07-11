@@ -3,7 +3,7 @@ class CreateCategories < ActiveRecord::Migration
     create_table :categories do |t|
       t.string :model
       t.string :sub_model
-      t.string :description
+      t.text :description
       t.string :image
 
       t.timestamps
