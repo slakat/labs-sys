@@ -17,3 +17,19 @@
 // Loads all Bootstrap javascripts
 
 //= require bootstrap
+
+
+function CheckedValues(){
+	var images =  $(".imgType");
+    for (i=0; i<images.length;i++){
+    images[i].onmouseover = function(){descriptionChecked(this);}}
+}
+
+function descriptionChecked(v){
+		
+		var h=v.getElementsByTagName('p')[0].innerHTML;
+		var c = $(".info-type")[0];
+		var r = c.getElementsByTagName('p')[0];
+		r.innerHTML = h;
+
+}

@@ -93,6 +93,11 @@ transition: all 2.7s ease;
 	overflow: hidden;
 	margin: 0 auto;
 	margin-top: 50px;
+
+	.imgType{
+	p{display: none;}
+}
+
 }
 
 .types img {
@@ -132,6 +137,9 @@ transition: all 2.7s ease;
 		color: #fff;
 	}
 }
+
+
+
 
 .products-cat{
 	margin-top: 100px;
