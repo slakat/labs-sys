@@ -7,19 +7,19 @@
 #   Mayor.create(name: 'Emanuel', city: cities.first)
 
 type_list = [
-	["com" , "sher","com/compresorSH.jpg"],
-	["com" , "her" ,"com/compresorH.jpg"],
-	["com", "scr","com/compresorSCroll.jpg"],
-	["com", "fra" ,"com/compresorFrac.png"],
-	["eva", "eva" ,"evap/evap1.png"],
-	["con", "con" ,"cond/con1.png"],
-	["fil", "dml" , "fil/filtrodml.png"],
-	["fil", "dlc" , "fil/filtrodlc.png"],
-	["ven" , "ven", "ven/ven1.png"]
+	["com" , "sher","com/compresorSH.jpg", "Compresores semi-herméticos de pistón Dorin , para refrigeración y aire acondicionado.\n - Alta eficiencia; modelos para refrigerantes R-22, R-134a, R-404 y R-507 \n - Fabricados bajo rigurosas normas internacionales de diseño y control en Italia\n - Desde 1.5 a 75 HP en stock para entrega inmediata\n - Disponibles en 220 y 380 V\n -Completa línea de repuestos en stock para su reparación .\n - Para alta, media y baja temperatura de evaporación."],
+	["com" , "her" ,"com/compresorH.jpg", "Compresores-herméticos de pistón Maneurop - Bristol-Copeland-Tecumseh , para refrigeración y aire acondicionado.\n - Alta eficiencia; modelos para refrigerantes R-22, R-134a, R-404 y R-507 \n- Fabricados bajo rigurosas normas internacionales de diseño y control .\n - Desde 1.5 a 13 HP en stock para entrega inmediata\n - Disponibles en 220 y 380 V\n - Para alta, media y baja temperatura de evaporación."],
+	["com", "scr","com/compresorSCroll.jpg", "- Línea de compresores herméticos tipo Scroll, para aplicaciones de alta y media temperatura.\n - Modelos Scroll y Rotativos Panasonic , ZR (R-22) ; ZP (R-410) ; SM (R-22): SZ (R-407)\n - Capacidad desde 9.000 BTU hasta 180.000 BTU"],
+	["com", "fra" ,"com/compresorFrac.png", "Línea de compresores fraccionarios Embraco-Aspera\n - Compresores para media y baja temperatura con gas R-134a.R-22; R-507 O R-404\n - Modelos en 220 V a 50 Hz.\n - Modelos de 1/6+ a 1.5 HP.\n- Rendimiento de +5°C a -35°C. \n Línea de compresores fraccionarios Danfoss: \n - Compresores para alta, media y baja temperatura con gas R-134a R-507\n - Modelos en 220 V a 50 Hz.\n - Modelos de 1/4+ a 3/4+ HP.\n - Rendimiento de +15°C a -35°C. "],
+	["eva", "eva" ,"evap/evap1.png", "Nuestros evaporadores de alta eficiencia están fabricados con aletas de aluminio y tubo de cobre de 12mm de alta calidad, los intercambiadores de calor se suministran limpios y probados con una presión de 30 bars.\n De aluminio pintado blanco al polvo electrostático, con alta resistencia contra la corrosión y los impactos.\n Sistema de desescarche por resistencias eléctricas de acero inoxidable enfundadas en tubos de aluminio localizados en el paquete aleteado y en la bandeja de desagüe. "],
+	["con", "con" ,"cond/con1.png" , "Nuestros condensadores de alta eficiencia, están fabricados con aletas de aluminio y tubo de cobre de 9.52mm de alta calidad.  Los intercambiadores de calor se suministras limpios en el interior de las tuberías y con una prueba de presión de 30bars.\n La carcaza de acero galvanizado pintado en negro al polvo electrostático, con alta resistencia contra la corrosión y resistente a los impactos no produce residuos tóxicos. \n Los ventiladores con motor axial y rotor externo, con alto estándar de seguridad y anclados a la carcaza."],
+	["fil", "dml" , "fil/filtrodml.png", "Los Filtros secadores DML están diseñados para aplicaciones con una gran adsorción de agua, y pueden ser utilizados con compresores de cualquier marca. Como los Filtros secadores de tipo DML no contienen alúmina activada, los aditivos de aceite no se deterioran "],
+	["fil", "dlc" , "fil/filtrodlc.png", "Los filtros secadores de tipo DCL son adecuados para instalaciones que funcionan con altas temperaturas de condensación y exigen una gran capacidad de secado "],
+	["ven" , "ven", "ven/ven1.png", "Ebmpapst \n - Diámetros desde 250 mm hasta 800 mm\n - Modelos en 220 V y 380 V, 24 50 y 60 Hz. \n - Flujo de aire Aspirante o Impelente.\n - Fabricados en Alemania\n Ziehl Abegg\n Desde 450 mm hasta 800 mm de diámetro en stock.\n - Distintos tipos, caudales de aire y presiones estáticas.\n - Modelos en 220 V y 380 V, 50 y 60 Hz.\n - Empleo en instalaciones DE MANTENCION Y BAJA TEMPERATURA.\n - Flujo de aire Aspirante o Impelente (según tipo).\n - Fabricados en Alemania.\n W.G\n Diámetros desde 250 mm hasta 800 mm.\n - Modelos en 220 V y 380 V, 50 Hz. \n - Flujo de aire Aspirante o Impelente.\n - Fabricados en China."]
 ]
 
-type_list.each do |model, sub_model , image|
-  Category.create( model:model, sub_model:sub_model, description:"una descripcion" ,image:image)
+type_list.each do |model, sub_model , image , description|
+  Category.create( model:model, sub_model:sub_model, description:description ,image:image)
 end
 
 
