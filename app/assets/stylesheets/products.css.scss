@@ -4,11 +4,13 @@
 
 
 .wrapper{
-	background: url('background.jpg'); 
-	height: 100%;
-	width: 100%;
-	margin-right: 40%;
+	background: url("background.jpg");
+	height: 500px;
+	width: 40%;
+	margin-left: 50%;
+	box-shadow: 0 0 8px black;
 }
+
 .show-item{
 	margin:80px;
 	background: white;
@@ -18,23 +20,76 @@
 .show-img {
 	width: 40%;
 	float: left;
-	margin: 20px;
+	height: 500px;
+	
 
 	img{
 	width: 100%;
-	margin: 0 auto;}
+	margin: 0 auto;
+
+}
 	
 }
 
 .show-title{
 	
 	margin: 30px;
+	padding-top:40px; 
+	
 
 	p{
-		font-size: 24px;
+		font-size: 40px;
+		font-weight: bolder;
+		font-family: arial;
+		color: white;
+		margin: 0 auto;
+		margin-left: 40px;
 	}
 }
 
 .show-desc{
 	margin: 30px;
+
+	p{
+		font-size: 16px;
+	}
+}
+
+.or-spacer {
+  margin-top:30px; margin-left:40px; width:400px; 
+  position:relative; 
+  
+  .mask { 
+    overflow:hidden; height:20px; 
+    &:after { 
+      content:''; 
+      display:block; margin:-25px auto 0;
+      width:100%; height:25px;  
+      border-radius:125px / 12px;  
+      box-shadow:0 0 8px black;
+    }
+  }
+  span {
+    $size:20px;
+    width:$size; height:$size; 
+    position:absolute; 
+    bottom:100%; margin-bottom:-$size/2;
+    left:50%; margin-left:-$size/2;
+    border-radius:100%;
+    box-shadow:0 2px 4px #999;
+    background:white;
+  }
+  span i {
+    $offset:4px;
+    position:absolute;
+    top:$offset; bottom:$offset;
+    left:$offset; right:$offset;
+    border-radius:100%;
+    border:1px dashed #aaa;
+    
+    text-align:center;
+    line-height:40px;
+    font-style:normal;
+    color:#999;
+  }
 }

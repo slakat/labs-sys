@@ -57,7 +57,7 @@ body::-webkit-scrollbar-thumb
 
 .footer
 {
-	background-color: #062340;
+	background-color: #042852; /* ##062340;*/
 	padding-top: 1%;
 	margin-bottom: 1px;
     bottom: 0px;
