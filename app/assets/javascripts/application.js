@@ -19,15 +19,31 @@
 //= require bootstrap
 
 
+function CheckedValues(){
+	var images =  $(".imgType");
+    for (i=0; i<images.length;i++){
+    images[i].onmouseover = function(){descriptionChecked(this);}}
+}
+
+function descriptionChecked(v){
+
+		var h=v.getElementsByTagName('p')[0].innerHTML;
+		var c = $(".info-type")[0];
+		var r = c.getElementsByTagName('p')[0];
+		r.innerHTML = h;
+
+}
+var rotating = true;
+
 function goclients(){
 
-	var $clientcarousel = $('#clients-list');
-	var clients = $clientcarousel.children().length;
-	var clientwidth = (clients * 140); // 140px width for each client item 
-	$clientcarousel.css('width',clientwidth);
+	var clientcarousel = $("#clients-list");
+	var clients = clientcarousel.children().length;
+	var clientwidth = (clients * 180); // 140px width for each client item 
+	clientcarousel.css('width',clientwidth);
 	alert(clients);
 	 
-	var rotating = true;
+	
 	var clientspeed = 1800;
 	var seeclients = setInterval(rotateClients, clientspeed);
 
@@ -42,14 +58,14 @@ function goclients(){
     mouseleave: function(){
       rotating = true;
     }
-  }, '#clients');
+  }, "#clients");
    
   function rotateClients() {
     if(rotating != false) {
-      var $first = $('#clients-list li:first');
-      $first.animate({ 'margin-left': '-140px' }, 600, function() {
-        $first.remove().css({ 'margin-left': '0px' });
-        $('#clients-list li:last').after($first);
+      var first = $("#clients-list li:first");
+      first.animate({ 'margin-left': '-148px' }, 600, function() {
+        first.remove().css({ 'margin-left': '0px' });
+        $('#clients-list li:last').after(first);
       });
     }
   };
