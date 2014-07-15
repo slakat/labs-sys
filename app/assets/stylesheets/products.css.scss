@@ -1,3 +1,40 @@
 // Place all the styles related to the Products controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+
+.wrapper{
+	background: url('background.jpg'); 
+	height: 100%;
+	width: 100%;
+	margin-right: 40%;
+}
+.show-item{
+	margin:80px;
+	background: white;
+
+}
+
+.show-img {
+	width: 40%;
+	float: left;
+	margin: 20px;
+
+	img{
+	width: 100%;
+	margin: 0 auto;}
+	
+}
+
+.show-title{
+	
+	margin: 30px;
+
+	p{
+		font-size: 24px;
+	}
+}
+
+.show-desc{
+	margin: 30px;
+}
