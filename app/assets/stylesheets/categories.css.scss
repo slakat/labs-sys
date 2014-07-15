@@ -151,3 +151,21 @@ transition: all 1.0s ease;
 	margin-top: 70px;
 
 }
+
+.imgType
+{
+	transform: skew(-26deg, 0deg) ;
+	-webkit-transform: skew(-26deg, 0deg) ;
+	-moz-transform: skew(-26deg, 0deg) ;
+	-o-transform: skew(-26deg, 0deg) ;
+	-ms-transform: skew(-26deg, 0deg) ;
+	border: 6px solid green;
+}
+.imgType img
+{
+	transform: skew(26deg, 0deg) ;
+	-webkit-transform: skew(26deg, 0deg) ;
+	-moz-transform: skew(26deg, 0deg) ;
+	-o-transform: skew(26deg, 0deg) ;
+	-ms-transform: skew(26deg, 0deg) ;
+}
