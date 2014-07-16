@@ -41,7 +41,7 @@ function goclients(){
 	var clients = clientcarousel.children().length;
 	var clientwidth = (clients * 180); // 140px width for each client item 
 	clientcarousel.css('width',clientwidth);
-	alert(clients);
+
 	 
 	
 	var clientspeed = 1800;

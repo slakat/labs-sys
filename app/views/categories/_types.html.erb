@@ -6,7 +6,8 @@
 	<% types.each do |type| %>
 		
 	<div class="imgType">
-		<%= link_to (image_tag type.image), :controller => "categories", :action => "index_product", :typeID => type.id , remote:true  %>
+		<!--<%= link_to (image_tag type.image), :controller => "categories", :action => "index_product", :typeID => type.id , remote:true  %>-->
+		<%= link_to (image_tag type.image), type  %>
 		<p><%=type.sub_model %></p>
 	</div>
 
