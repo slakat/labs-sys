@@ -128,17 +128,19 @@ transition: all 1.0s ease;
 
 .info-type{
 	margin: 0 auto;
-	margin-top: 50px;
-	height: 150px;
-	width: 800px;
-	background: #000;
+	margin-top: 70px;
+	height: 100px;
+	width: 500px;
+	background: #042852;
 	margin-bottom: 150px;
+	border-radius:10px;
 
 	p{
-		padding:20px;
+		padding:35px;
 		text-align: center;
 		font-size: 16px;
 		color: #fff;
+		vertical-align:center;
 	}
 }
 
