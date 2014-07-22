@@ -10,6 +10,7 @@ class CategoriesController < ApplicationController
 
   def index_category
     @type= Category.where(:model=>params[:cat])
+    @title=params[:title]
      respond_to do |format|
         format.html{redirect_to "index"}
         format.js{}

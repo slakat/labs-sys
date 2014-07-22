@@ -9,6 +9,11 @@
 	background-color: #fff;
 }
 
+#crumb 
+{
+	margin-top:50px;
+}
+
 .opciones-bg{
 	background: asset-url('opciones-bg.jpg');
 	border:5px solid #fff;
@@ -151,7 +156,7 @@ transition: all 1.0s ease;
 	margin-top: 70px;
 
 }
-
+/*
 .imgType
 {
 	transform: skew(-26deg, 0deg) ;
@@ -168,4 +173,4 @@ transition: all 1.0s ease;
 	-moz-transform: skew(26deg, 0deg) ;
 	-o-transform: skew(26deg, 0deg) ;
 	-ms-transform: skew(26deg, 0deg) ;
-}
+}*/
