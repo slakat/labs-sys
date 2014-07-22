@@ -6,26 +6,27 @@
 .wrapper{
 	background: url("background.jpg");
 	height: 500px;
-	width: 40%;
-	margin-left: 50%;
 	box-shadow: 0 0 8px black;
 }
 
 .show-item{
-	margin:80px;
 	background: white;
+  width: 100%;
+  margin: 0 auto;
+  margin-top: 80px;
 
 }
 
 .show-img {
-	width: 40%;
-	float: left;
-	height: 500px;
+	/*width: 40%;
+	height: 500px;*/
 	
 
 	img{
-	width: 100%;
-	margin: 0 auto;
+	 height: 100%;
+    margin: 0 auto;
+    max-height: 300px;
+    display: block;
 
 }
 	
@@ -42,13 +43,22 @@
 		font-weight: bolder;
 		font-family: arial;
 		color: white;
-		margin: 0 auto;
-		margin-left: 40px;
+    text-align: center;
+    display: block;
+
+
 	}
 }
 
 .show-desc{
 	margin: 30px;
+  width: 50%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: rgba(255,255,255,.8);
+  padding: 10px;
+  border-radius: 10px;
 
 	p{
 		font-size: 16px;
