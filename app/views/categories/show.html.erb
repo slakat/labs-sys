@@ -1,16 +1,17 @@
 
 <div class="show-item">
-
+ <div class="show-title"><p><%= @category.sub_model %></p></div>
+   <div class="or-spacer">
+  <div class="mask"></div>
+  <span><i></i></span>
+</div>
   <div class="show-img">
       <%= image_tag @category.image %>
   </div>
 <div class="wrapper">
-  <div class="show-title"><p><%= @category.sub_model %></p></div>
+ 
 
-  <div class="or-spacer">
-  <div class="mask"></div>
-  <span><i></i></span>
-</div>
+
 
   <div class="show-desc"><p><%= @category.description %></p></div>
 
