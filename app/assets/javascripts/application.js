@@ -69,3 +69,54 @@ function goclients(){
       });
     }
   };
+
+
+var marker;
+var map;
+
+function initialize() {
+  var myLatlng = new google.maps.LatLng(-33.4442267,-70.62773520000002);
+  var mapOptions = {
+    zoom: 17,
+    center: myLatlng
+  };
+
+   map = new google.maps.Map(document.getElementById('map-canvas'), mapOptions);
+
+  var contentString = '<div id="content">'+
+      '<div id="siteNotice">'+
+      '</div>'+
+      '<h2 id="firstHeading" class="firstHeading">Oficina Sistemas y Suministros</h2>'+
+      '<div id="bodyContent">'+
+      '<p><b>Dirección:</b> Marín #0319, Providencia, Santiago'+
+      '<p><b>t:</b> (02) 222 0320</p>'+
+      '</div>'+
+      '</div>';
+
+  var infowindow = new google.maps.InfoWindow({
+      content: contentString
+  });
+
+   marker = new google.maps.Marker({
+      position: myLatlng,
+      map: map,
+      title: 'Oficina Sistemas y Suministros',
+      animation: google.maps.Animation.DROP
+  });
+  google.maps.event.addListener(marker, 'click', function() {
+    infowindow.open(map,marker);
+  });
+
+   google.maps.event.addListener(marker, 'click', toggleBounce);
+}
+
+  function toggleBounce() {
+
+    if (marker.getAnimation() != null) {
+      marker.setAnimation(null);
+    } else {
+      marker.setAnimation(google.maps.Animation.BOUNCE);
+    }
+  }
+
+$(document).on('page:load',initialize);
