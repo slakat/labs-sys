@@ -3,9 +3,14 @@
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
 .info-home{
-	padding-top: 80px;
+	/*padding-top: 80px;
 	margin-bottom: 80px;
-	margin-left:5%;
+	margin-left:5%;*/
+
+	padding-top: 8%;
+	margin-bottom: 8%;
+	margin-left: 5%;
+
 
 	image{
 		padding-top: 10px;
@@ -51,8 +56,8 @@ margin-right: -15px;
 .featured-home{
 	padding-top: 50px;
 	padding-left: 2%;
-	margin-bottom: 25px;
-	margin-top: 200px;
+	margin-bottom: 5%;/*25px*/
+	margin-top: 15%;/*200px*/
 	text-align: center;
 	color: #fff;
 
@@ -116,7 +121,7 @@ margin-right: -15px;
   width: 100%;
   margin: 0 auto;
   overflow: hidden;
-  height: 60px;
+  height: 60px;/*60px;*/
 }
  
 .clients-wrap ul {
