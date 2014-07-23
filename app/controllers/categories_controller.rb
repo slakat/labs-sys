@@ -18,8 +18,8 @@ class CategoriesController < ApplicationController
   end
 
   def index_tools
-    @tools= Category.where(:model=>params[:catT])
-    @accesories=Category.where(:model=>params[:catA])
+    @tools= params[:catT]
+    @accesories=params[:catA]
      
   end
 
@@ -38,6 +38,12 @@ class CategoriesController < ApplicationController
   def show
   end
 
+  def show_tools
+    @what=params[:titulo]
+    @elements= Category.where(:model=>params[:type])
+    @link=params[:link]
+    @carpeta=params[:fotos]
+  end
   # GET /categories/new
   def new
     @category = Category.new

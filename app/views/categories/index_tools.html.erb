@@ -6,29 +6,21 @@
 	
 
 	<div class="imgType">
-		<div id="links" class="ocultarLinks">
-		<%= link_to (image_tag "tools/acce.png"), (image_path "tools/init-01.png") , title: "Inicio"  %>
-
-		<% @accesories.each do |accesory| %>
-			<%= link_to  "None" , (image_path accesory.image), title: accesory.sub_model  %>
-		<%end %>
+		
+		<%= link_to (image_tag "tools/acce.png"), :controller => "categories", :action => "show_tools", :type => @accesories, :link=>"tools/acce.png" , :titulo=>"Accesorios" , :fotos=>"accesories"%>
+		
 			
 		
-		</div>
+		
 		<p>Accesorios</p>
 	</div>
 
  	<div class="imgType">
-		<div id="links2" class="ocultarLinks">
-		<%= link_to (image_tag "tools/tools.png"), (image_path "tools/init-01.png") , title: "Inicio" %>
-
-		<% @tools.each do |tool| %>
-			<%= link_to  "None" , (image_path tool.image), title: tool.sub_model  %>
-		<%end %>
-
+		
+		<%= link_to (image_tag "tools/tools.png"), :controller => "categories", :action => "show_tools", :type => @tools, :link=>"tools/tools.png" , :titulo=>"Herramientas" , :fotos=>"tools" %>
 		
 
-		</div>
+		
 		<p>Herramientas</p>
 
 	</div>
@@ -49,34 +41,3 @@
 
 
 
-<div id="blueimp-gallery" class="blueimp-gallery blueimp-gallery-controls">
-    <div class="slides"></div>
-    <h3 class="title"></h3>
-    <a class="prev">‹</a>
-    <a class="next">›</a>
-    <a class="close">×</a>
-    <a class="play-pause"></a>
-    <ol class="indicator"> </ol>
-</div>
-
-
-
- <script>
-document.getElementById('links').onclick = function (event) {
-    event = event || window.event;
-    var target = event.target || event.srcElement,
-        link = target.src ? target.parentNode : target,
-        options = {index: link, event: event},
-        links = this.getElementsByTagName('a');
-    blueimp.Gallery(links, options);
-};
-
-document.getElementById('links2').onclick = function (event) {
-    event = event || window.event;
-    var target = event.target || event.srcElement,
-        link = target.src ? target.parentNode : target,
-        options = {index: link, event: event},
-        links = this.getElementsByTagName('a');
-    blueimp.Gallery(links, options);
-};
-</script>

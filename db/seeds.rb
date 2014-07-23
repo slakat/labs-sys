@@ -27,11 +27,29 @@ type_list = [
 	["val" , "De Expansión Danfoss", "val/valExp.png", "None"],
 	["val" , "De Bola Danfoss", "val/valBola.png", "tipoGBC 1/2\" hasta 3 1/8\""],
 	["val" , "De Paso", "val/valPaso.png", "(Diafragma)1/4\" hasta 5/8\""],
-	["ref" , "Refrigerantes", "ref/ref1.png", ""],
+	["ref" , "Refrigerantes", "ref/ref1.png", "<table><tr><th>Refrigerante</th><th>Peso neto Kg</th><th>Aplicación</th></tr><tr><td>R-22</td><td>13,6</td><td>Refrigeración comercial e industrial AC</td></tr><tr><td>R-134a</td><td>13,6</td><td>AC automotriz y refrigeración comercial</td></tr><tr><td>R-134a</td><td>0,227</td><td>Gas en lata de 227 gramos (8 o.z)</td></tr><tr><td>R-141b</td><td>13,6</td><td>Limpieza de sistemas HVAC</td></tr><tr><td>R-404a</td><td>10,9</td><td>Baja temperatura de refrigeración</td></tr><tr><td>R-406a</td><td>11,3</td><td>Sustituto del gas R-12</td></tr><tr><td>R-407c</td><td>11,3</td><td>Refrigeración comercial e industrial AC</td></tr><tr><td>R-408a</td><td>10,9</td><td>Baja temperatura de refrigeración</td></tr><tr><td>R-410a</td><td>11,3</td><td>Refrigeración comercial e industrial AC</td></tr><tr><td>R-507</td><td>11,3</td><td></td></tr></table>".html_safe],
 
 
-	["her" , "Martillo", "tools/tools/martillo.png", ""],
-	["her" , "Alicate", "tools/tools/alicate.png", ""],
+	["her" , " Cortadores de tubo ", "tools/tools/martillo.png", " De 1/8\" a 2-5/8\""],
+	["her" , " Llaves de chicharra ", "tools/tools/martillo.png", " De 1/4\", 3/8\", 3/16\", 9/16\", 3/16\", 5/16\" y 1/2\" "],
+	["her" , " Peine de aletas ", "tools/tools/martillo.png", " Para condensadores y evaporadores "],
+	["her" , " Prensas de expansión ", "tools/tools/martillo.png", " De 1/4\" a 1-1/8\""],
+	["her" , "Resorte dobla tubo", "tools/tools/martillo.png", "1/4\", 5/16\", 3/8\", 1/2\" y 5/8\""],
+	["her" , " Saca pepas ", "tools/tools/martillo.png", " En cuerpo de aluminio y tubo de acero "],
+	["her" , " Dobladora de tubos ", "tools/tools/martillo.png", "1/4\", 5/16\", 3/8\",1/2\", 5/8\", 7/8\" "],
+	["her" , " Escariadores ", "tools/tools/martillo.png", " Para tuberías "],
+	["her" , " Expandidores de golpe ", "tools/tools/martillo.png", " De 1/8\" a 7/8\" "],
+	["her" , " Arboles de carga ", "tools/tools/martillo.png", " Para gases refrigerantes R22, R-134, R-404, R-507. Con y sin protector. digital y análogo "],
+	["her" , " Bomba de Aceite ", "tools/tools/martillo.png", " Para carga de aceite "],
+	["her" , " Corta capilar ", "tools/tools/martillo.png", " Herramienta de corte corta capilares "],
+	["her" , " Soplete ", "tools/tools/martillo.png", " Antorcha de soldadura con encendido eléctrico y manual "],
+	["her" , " Acople Rapido ", "tools/tools/martillo.png", " Herramienta para la carga de refrigerante en automóviles "],
+	["her" , " Amperimetros ", "tools/tools/martillo.png", " Digitales y análogos "],
+	["her" , " Caiman Sellador ", "tools/tools/martillo.png", ""],
+	["her" , " Balanzas ", "tools/tools/martillo.png", " Electrónicas para la carga de refrigerante "],
+	["her" , " Bomba de vacio ", "tools/tools/martillo.png", " Desde 3,5CFM a 12CFM "],
+	["her" , "", "tools/tools/martillo.png", ""],
+
 
 	["acc" , "Valvula", "tools/accesories/valvula.png", ""],
 	["acc" , "Tubos", "tools/accesories/tubos.png", ""]
@@ -39,7 +57,7 @@ type_list = [
 ]
 
 type_list.each do |model, sub_model , image , description|
-  Category.create( model:model, sub_model:sub_model, description:description ,image:image)
+  Category.create( model:model, sub_model:sub_model, description:description.html_safe ,image:image)
 end
 
 
