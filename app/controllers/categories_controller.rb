@@ -17,6 +17,14 @@ class CategoriesController < ApplicationController
     end
   end
 
+  def index_tools
+    @tools= Category.where(:model=>params[:catT])
+    @accesories=Category.where(:model=>params[:catA])
+     
+  end
+
+
+
   def index_product
     @producto= Product.where(:category_id=>params[:typeID])
      respond_to do |format|

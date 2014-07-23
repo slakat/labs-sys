@@ -161,6 +161,10 @@ transition: all 0.5s ease;
 	margin-top: 70px;
 
 }
+.ocultarLinks a:nth-child(n+2)
+{
+	display:none;
+}
 /*
 .imgType
 {

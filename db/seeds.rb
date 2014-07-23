@@ -27,7 +27,14 @@ type_list = [
 	["val" , "De Expansión Danfoss", "val/valExp.png", "None"],
 	["val" , "De Bola Danfoss", "val/valBola.png", "tipoGBC 1/2\" hasta 3 1/8\""],
 	["val" , "De Paso", "val/valPaso.png", "(Diafragma)1/4\" hasta 5/8\""],
-	["ref" , "Refrigerantes", "ref/ref1.png", ""]
+	["ref" , "Refrigerantes", "ref/ref1.png", ""],
+
+
+	["her" , "Martillo", "tools/tools/ref1.png", ""],
+	["her" , "Alicate", "tools/tools/ref1.png", ""],
+
+	["acc" , "Valvula", "tools/accesories/valvula.png", ""],
+	["acc" , "Tubos", "tools/accesories/tubos.png", ""]
 	
 ]
 
