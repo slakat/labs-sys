@@ -35,8 +35,7 @@ border: 0;
 
 
 .container-group{
-	height: 100%;
-	margin-bottom: -50px;
+	min-height: calc(100% - 50px);
 }
 
 .container-fluid {
@@ -78,7 +77,6 @@ body::-webkit-scrollbar-thumb
     color: #fff;
     text-align: center;
     height: 50px;
-    margin-top: -50px;
 
 }
 
