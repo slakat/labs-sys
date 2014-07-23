@@ -53,7 +53,7 @@ function goclients(){
  $(document).on({
     mouseenter: function(){
       rotating = false; // turn off rotation when hovering
-      alert("in")
+
     },
     mouseleave: function(){
       rotating = true;
@@ -63,7 +63,7 @@ function goclients(){
   function rotateClients() {
     if(rotating != false) {
       var first = $("#clients-list li:first");
-      first.animate({ 'margin-left': '-148px' }, 600, function() {
+      first.animate({ 'margin-left': '-148px' }, 400, function() {
         first.remove().css({ 'margin-left': '0px' });
         $('#clients-list li:last').after(first);
       });
