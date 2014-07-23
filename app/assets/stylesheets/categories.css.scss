@@ -68,8 +68,11 @@ width: 291px;
 }
 
 .cat img, p {
--webkit-transition: all 1.0s ease;
-transition: all 1.0s ease;
+-webkit-transition: all 0.5s ease;
+-moz-transition: 0.5s;
+  -ms-transition: 0.5s;
+  -o-transition: 0.5s;
+transition: all 0.5s ease;
 }
 
 .cat-info{
