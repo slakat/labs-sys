@@ -30,8 +30,8 @@ type_list = [
 	["ref" , "Refrigerantes", "ref/ref1.png", ""],
 
 
-	["her" , "Martillo", "tools/tools/ref1.png", ""],
-	["her" , "Alicate", "tools/tools/ref1.png", ""],
+	["her" , "Martillo", "tools/tools/martillo.png", ""],
+	["her" , "Alicate", "tools/tools/alicate.png", ""],
 
 	["acc" , "Valvula", "tools/accesories/valvula.png", ""],
 	["acc" , "Tubos", "tools/accesories/tubos.png", ""]
