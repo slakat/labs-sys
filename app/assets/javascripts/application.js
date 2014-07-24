@@ -44,7 +44,7 @@ function goclients(){
 
 	 
 	
-	var clientspeed = 1800;
+	var clientspeed = 1;
 	var seeclients = setInterval(rotateClients, clientspeed);
 
 };
@@ -63,7 +63,7 @@ function goclients(){
   function rotateClients() {
     if(rotating != false) {
       var first = $("#clients-list li:first");
-      first.animate({ 'margin-left': '-148px' }, 400, function() {
+      first.animate({ 'margin-left': '-140px' }, 2000, function() {
         first.remove().css({ 'margin-left': '0px' });
         $('#clients-list li:last').after(first);
       });
