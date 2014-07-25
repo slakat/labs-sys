@@ -8,6 +8,8 @@ class PagesController < ApplicationController
   end
   def contact
   end
+  def informacion
+  end
 
 def contact_succes
 end 

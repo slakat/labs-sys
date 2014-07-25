@@ -16,6 +16,7 @@ App::Application.routes.draw do
   get "pages/index"
   get "pages/about"
   get "pages/contact"
+  get "pages/informacion"
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
