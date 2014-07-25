@@ -16,7 +16,7 @@ ActiveRecord::Schema.define(version: 20140709220353) do
   create_table "categories", force: true do |t|
     t.string   "model"
     t.string   "sub_model"
-    t.string   "description"
+    t.text     "description"
     t.string   "image"
     t.datetime "created_at"
     t.datetime "updated_at"
