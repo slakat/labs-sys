@@ -10,6 +10,7 @@ App::Application.routes.draw do
   match '/index_product', to: 'categories#index_product', via: 'get'
   match '/index_tools', to: 'categories#index_tools', via: 'get'
   match '/show_tools', to: 'categories#show_tools', via: 'get'
+  match '/send_mail', to: 'pages#send_mail', via: 'post'
 
   get "pages/index"
   get "pages/about"
