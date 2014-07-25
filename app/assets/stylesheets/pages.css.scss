@@ -162,6 +162,8 @@ margin-right: -15px;
     background-color: #CCC;
     display: block;
     margin: 0 auto;
+    float: left;
+    margin: 5%;
    
 }
 
@@ -184,5 +186,83 @@ margin-right: -15px;
    		 
     		display: block;
     		border: 5px solid whitesmoke;
+	}
+}
+
+.form-contact{
+	background: rgba(255,255,255,.3);
+	position: relative;
+	margin: 50px auto;
+	width: 30%;
+	max-width: 600px;
+	min-width: 300px;
+	float: left;
+	padding-top: 20px;
+	padding-bottom: 10px;
+	text-align: center;
+	-moz-box-shadow:    3px 3px 5px 6px #ccc;
+  -webkit-box-shadow: 3px 3px 5px 6px #ccc;
+  box-shadow:         3px 3px 5px 6px #ccc;
+
+  	-webkit-transition: width 2s ease, height 2s ease;
+	-moz-transition: width 2s ease, height 2s ease;
+	-o-transition: width 2s ease, height 2s ease;
+	-ms-transition: width 2s ease, height 2s ease;
+	transition: width 2s ease, height 2s ease;
+}
+
+.form-contact div{
+	margin:0 auto;
+	padding:10px;
+}
+
+.form-contact input,textarea{
+	border-radius:10px;
+	border: rgba(255,255,255,.6);
+	width: 80%;
+	resize: none;
+	border-color: #666;
+
+}
+
+.form-contact input:focus,textarea:focus{
+	border-radius:10px;
+	color: #000;
+	outline: 0;
+	box-shadow: 0 0 5px rgba(81, 203, 238, 1);
+  	border: 1px solid rgba(81, 203, 238, 1);
+} 
+
+.form-contact label{
+	display: block;
+	width: 30%;
+	float: left;
+	margin-bottom: 10px;
+	paddint-bottom:10px;
+}
+
+#info-contact{
+	background: rgba(0,0,0,.3);
+	color: #fff;
+	padding: 10px;
+	padding-top: 1px;
+	margin-top: 20px ;
+	border-radius: 10px;
+
+	h2{
+		color: black;
+	}
+}
+
+.button{
+	color: white;
+}
+
+@media only screen and (max-width : 960px) {
+	.form-contact {
+		width: 90%;
+		margin-left: 5%;
+		display: block;
+		margin-bottom: 5%;
 	}
 }
