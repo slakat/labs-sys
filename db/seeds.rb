@@ -27,7 +27,7 @@ type_list = [
 	["val" , "De Expansión Danfoss", "val/valExp.png", "None"],
 	["val" , "De Bola Danfoss", "val/valBola.png", "tipoGBC 1/2\" hasta 3 1/8\""],
 	["val" , "De Paso", "val/valPaso.png", "(Diafragma)1/4\" hasta 5/8\""],
-	["ref" , "Refrigerantes", "ref/ref1.png", "<table><tr><th>Refrigerante</th><th>Peso neto Kg</th><th>Aplicación</th></tr></br><tr><td>R-22</td><td>13,6</td><td>Refrigeración comercial e industrial AC</td></tr></br><tr><td>R-134a</td><td>13,6</td><td>AC automotriz y refrigeración comercial</td></tr></br><tr><td>R-134a</td><td>0,227</td><td>Gas en lata de 227 gramos (8 o.z)</td></tr></br><tr><td>R-141b</td><td>13,6</td><td>Limpieza de sistemas HVAC</td></tr></br><tr><td>R-404a</td><td>10,9</td><td>Baja temperatura de refrigeración</td></tr></br><tr><td>R-406a</td><td>11,3</td><td>Sustituto del gas R-12</td></tr></br><tr><td>R-407c</td><td>11,3</td><td>Refrigeración comercial e industrial AC</td></tr></br><tr><td>R-408a</td><td>10,9</td><td>Baja temperatura de refrigeración</td></tr></br><tr><td>R-410a</td><td>11,3</td><td>Refrigeración comercial e industrial AC</td></tr></br><tr><td>R-507</td><td>11,3</td><td></td></tr></br></table>".html_safe],
+	["ref" , "Refrigerantes", "ref/ref1.png", "<table><tr><th>Refrigerante</th><th>Peso neto Kg</th><th>Aplicación</th></tr><tr><td>R-22</td><td>13,6</td><td>Refrigeración comercial e industrial AC</td></tr><tr><td>R-134a</td><td>13,6</td><td>AC automotriz y refrigeración comercial</td></tr><tr><td>R-134a</td><td>0,227</td><td>Gas en lata de 227 gramos (8 o.z)</td></tr><tr><td>R-141b</td><td>13,6</td><td>Limpieza de sistemas HVAC</td></tr><tr><td>R-404a</td><td>10,9</td><td>Baja temperatura de refrigeración</td></tr><tr><td>R-406a</td><td>11,3</td><td>Sustituto del gas R-12</td></tr><tr><td>R-407c</td><td>11,3</td><td>Refrigeración comercial e industrial AC</td></tr><tr><td>R-408a</td><td>10,9</td><td>Baja temperatura de refrigeración</td></tr><tr><td>R-410a</td><td>11,3</td><td>Refrigeración comercial e industrial AC</td></tr><tr><td>R-507</td><td>11,3</td><td></td></tr></table>"],
 
 
 	["her" , " Cortadores de tubo ", "tools/tools/martillo.png", " De 1/8\" a 2-5/8\""],
@@ -65,7 +65,7 @@ type_list = [
 ]
 
 type_list.each do |model, sub_model , image , description|
-  Category.create( model:model, sub_model:sub_model, description:description.html_safe ,image:image)
+  Category.create( model:model, sub_model:sub_model, description:description ,image:image)
 end
 
 
