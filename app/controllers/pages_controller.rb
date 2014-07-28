@@ -18,7 +18,7 @@ def send_mail
     name = @captcha.values[:name]
     mail = @captcha.values[:mail]
     comments = @captcha.values[:comments]
-    #ContactMailer.contact_mail(name, mail, comments).deliver
+    ContactMailer.contact_mail(name, mail, comments).deliver
 
     redirect_to :controller => :pages, :action => :contact_succes , notice: 'Mensaje enviado'
     else

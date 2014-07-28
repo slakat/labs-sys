@@ -118,5 +118,5 @@ function initialize() {
       marker.setAnimation(google.maps.Animation.BOUNCE);
     }
   }
-
+$(initialize);
 $(document).on('page:load',initialize);
