@@ -148,7 +148,10 @@ td{
   border-color:#999;color:#444;
   /*background-color:#F7FDFA;*/
   border-top-width:1px;
-  border-bottom-width:1px;}
+  border-bottom-width:1px;
+  text-align: center;
+  border-right: 1px solid #999;
+  }
 
 th{font-family:Arial, sans-serif;
   font-size:14px;
@@ -162,4 +165,6 @@ th{font-family:Arial, sans-serif;
   color:#fff;
   background-color:#042852;
   border-top-width:1px;
-  border-bottom-width:1px;}
+  border-bottom-width:1px;
+  text-align:center;
+  }

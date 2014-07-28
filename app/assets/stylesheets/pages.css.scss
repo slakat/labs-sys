@@ -259,6 +259,13 @@ margin-right: -15px;
 	background: #042852;
 }
 
+
+textarea{
+	border:1px solid;
+	border-color:#ACA6A6;
+	padding:3px;
+}
+
 @media only screen and (max-width : 960px) {
 	.form-contact {
 		width: 90%;
