@@ -11,9 +11,22 @@ class CategoriesController < ApplicationController
   def index_category
     @type= Category.where(:model=>params[:cat])
     @title=params[:title]
-     respond_to do |format|
-        format.html{redirect_to "index"}
-        format.js{}
+    puts @type.size
+    puts "---"
+    puts @type.first.id
+    puts "--------"
+    puts category_path(@type.first.id)
+    puts "----------------\n"
+
+    if @type.size==1
+      
+      puts "------------------------- Here"
+      redirect_to category_path(@type.first.id)
+    else
+      respond_to do |format|
+          format.html{redirect_to "index"}
+          format.js{}
+      end
     end
   end
 
