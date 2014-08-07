@@ -28,7 +28,9 @@ border: 0;
 	-moz-background-size: cover;
 	-o-background-size: cover;
 	background-size: cover;
-    height: calc(100% + 50px);
+    min-height: 110% ;
+    overflow: hidden; 
+    width: 100%;
 
 
 }
@@ -126,6 +128,55 @@ text-shadow: 0 -1px 0 rgba(0,0,0,.25);
 color: #999;
 }
 
+
 .navbar-nav>.active>a {
 background-image: none;
 }
+
+
+@media only screen and (max-width : 640px) {
+
+
+
+}
+
+@media only screen and (min-width : 1400px) {
+
+	.content-home{
+		height: 1300px;
+	}
+
+}
+
+@media only screen and (min-width : 1350px) {
+
+	.content-home{
+		height: 1300px;
+	}
+
+}
+
+@media only screen and (min-width : 1280px) {
+
+	.content-home{
+		height: 1200px;
+	}
+
+}
+
+@media only screen and (min-width : 1024px) {
+
+	.content-home{
+		height: 950px;
+	}
+
+}
+
+@media only screen and (min-width : 800px) {
+
+	.content-home{
+		height: 550px;
+	}
+
+}
+
