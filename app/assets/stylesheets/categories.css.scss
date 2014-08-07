@@ -229,17 +229,27 @@ transition: all 0.5s ease;
 }
 
 @media only screen and (max-width : 640px) {
-
-	.cat-info{
-
-
-	margin-top: 55px;
-
+	.cat{
+	height:120px;
+	border:5px solid #fff;
+	overflow: hidden;
+	background: rgba(0,0,0,.3);
 
 	p{
-		font-size: 12px;
+		text-align: center;
+		font-size: 16px;
+		color: #fff;
+		margin-top: 35%;
+		text-align: center;
+		height: 55%;
+		line-height: 0.9;
+		text-shadow: 5px 5px 10px black;
 
 	}
+
+
+}
+	
 }
 
 
