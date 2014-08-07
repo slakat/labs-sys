@@ -35,8 +35,8 @@
     </div>
 
         <div class="cat col-xs-6 col-sm-4 col-md-4">
-          <%= get_url_img("cyb/cyb1.png","cyb","Cieres y Bisagras") %>
-      <p><%=get_url("CIERRES Y BISAGRAS","cyb","Cieres y Bisagras") %></p>
+          <%= link_to (image_tag "tools/bis.png"), :controller => "categories", :action => "show_tools", :type => "cyb", :link=>"tools/bis.png" , :titulo=>"Cieres y Bisagras" , :fotos=>"bisagra"%>
+      <p><%= link_to "CIERRES Y BISAGRAS", :controller => "categories", :action => "show_tools", :type => "cyb", :link=>"tools/bis.png" , :titulo=>"Cierres y Bisagras" , :fotos=>"bisagra"%></p>
     </div>
 
         <div class="cat col-xs-6 col-sm-4 col-md-4">
