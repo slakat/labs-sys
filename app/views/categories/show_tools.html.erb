@@ -6,7 +6,7 @@
 </div>
   <div class="show-img">
   	<div id="links" class="ocultarLinks">
-      	<%= link_to (image_tag @link), (image_path @link) , title: "Herramientas" %>
+      	<%= link_to (image_tag @link), (image_path @link) , title: @what %>
 
 		<% @images = Dir.glob("app/assets/images/tools/"+@carpeta+"/*.jpg") %>
 
@@ -28,10 +28,12 @@
   <div class="show-desc">
   	<% @elements.each do |element| %>
   		<%if(element.sub_model!="")%>
-		<p class="tool-desc"> -<b><%=element.sub_model%>:</b> <%=element.description %></p>
+		<p class="tool-desc"> -<b><%=element.sub_model%>:</b> <%=element.description.html_safe %></p>
 		<%end %>
 	<%end %>
+  <p>*Manejamos stock disponible en forma permanente, para la entrega inmediata.</p>
   </div>
+
 
 </div>
 

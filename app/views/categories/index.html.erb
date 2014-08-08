@@ -30,8 +30,8 @@
     </div>
 
         <div class="cat col-xs-6 col-sm-4 col-md-4">
-           <%= get_url_img("ter/portadatermometros.jpg","ter","Termostatos") %>
-      <p><%=get_url("CONTROLES PARA REFRIGERACIÓN","ter","Termostatos") %></p>
+           <%= link_to image_tag("ter/portadatermometros.jpg" ), :controller => "categories", :action => "index_controls", :terM=>"terM" , :terT=>"terT" , :terP=>"terP"  %>
+      <p><%= link_to "CONTROLES PARA REFRIGERACIÓN", :controller => "categories", :action => "index_controls", :terM=>"terM" , :terT=>"terT" , :terP=>"terP"  %></p>
     </div>
 
         <div class="cat col-xs-6 col-sm-4 col-md-4">
@@ -75,8 +75,9 @@
     </div>
 
             <div class="cat col-xs-6 col-sm-4 col-md-4">
-              <%= get_url_img("sep/sep.jpg","sep","Separadores de liquido y aceite") %>
-      <p><%=get_url("SEPARADORES DE LIQUIDO Y ACEITE","sep","Separadores de liquido y aceite") %></p>
+      
+      <%= link_to image_tag("sep/sep.jpg" ), :controller => "categories", :action => "index_separadores", :sepR=>"sepR" , :sepL=>"sepL",:sepA=>"sepA"  %>
+      <p><%= link_to "SEPARADORES DE LIQUIDO Y ACEITE", :controller => "categories", :action => "index_separadores", :sepR=>"sepR" , :sepL=>"sepL",:sepA=>"sepA" %></p>
     </div>
 
             <div class="cat col-xs-6 col-sm-4 col-md-4">

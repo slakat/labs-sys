@@ -23,7 +23,19 @@ class CategoriesController < ApplicationController
      
   end
 
+  def index_controls
+    @micro= params[:terM]
+    @termo= params[:terT]
+    @pres=params[:terP]
+     
+  end
 
+  def index_separadores
+    @rec= params[:sepR]
+    @sepL= params[:sepL]
+    @sepA=params[:sepA]
+     
+  end
 
   def index_product
     @producto= Product.where(:category_id=>params[:typeID])
