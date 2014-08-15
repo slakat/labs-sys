@@ -47,13 +47,13 @@ border: 0;
 
 .wrapper-home{
 	overflow: hidden;
-	height: 100%;
+	height: calc(100% - 110px);
 }
 
 .container-group{
 	
 	background-color: white;
-	height: 100%;
+
 }
 
 .container-fluid {
@@ -61,7 +61,7 @@ margin-right: 0;
 margin-left: 0;
 padding-left: 0;
 padding-right: 0;
-height: calc(100% - 110px);
+
 
 }
 
