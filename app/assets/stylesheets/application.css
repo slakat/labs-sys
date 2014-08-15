@@ -39,6 +39,7 @@ border: 0;
     overflow: hidden; 
     width: 100%;
     padding-top: 20px;
+    height: 100%;
 
 
 }
@@ -47,6 +48,7 @@ border: 0;
 .container-group{
 	
 	background-color: white;
+	height: 100%;
 }
 
 .container-fluid {
@@ -54,6 +56,8 @@ margin-right: 0;
 margin-left: 0;
 padding-left: 0;
 padding-right: 0;
+overflow: hidden;
+height: calc(100% - 110px);
 
 }
 
