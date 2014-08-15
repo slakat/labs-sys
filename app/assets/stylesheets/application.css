@@ -6,7 +6,8 @@
 
 body{
 	margin:0;
-	background-color: #062340;
+	/*background-color: #062340;*/
+	background-color: #042852;
 
 }
 
@@ -35,7 +36,6 @@ border: 0;
 	-moz-background-size: cover;
 	-o-background-size: cover;
 	background-size: cover;
-    min-height: 110% ;
     overflow: hidden; 
     width: 100%;
     padding-top: 20px;
@@ -45,7 +45,8 @@ border: 0;
 
 
 .container-group{
-	min-height: calc(100% - 50px);
+	
+	background-color: white;
 }
 
 .container-fluid {
@@ -86,7 +87,8 @@ body::-webkit-scrollbar-thumb
     overflow: visible;
     color: #fff;
     text-align: center;
-    height: 50px;
+    min-height: 50px;
+    
 
 }
 
@@ -143,48 +145,13 @@ background-image: none;
 
 
 @media only screen and (max-width : 640px) {
+		.show-desc{
 
+ 	 width: 90%;
+}
 
 
 }
 
-@media only screen and (min-width : 1400px) {
 
-	.content-home{
-		height: 1300px;
-	}
-
-}
-
-@media only screen and (min-width : 1350px) {
-
-	.content-home{
-		height: 1300px;
-	}
-
-}
-
-@media only screen and (min-width : 1280px) {
-
-	.content-home{
-		height: 1200px;
-	}
-
-}
-
-@media only screen and (min-width : 1024px) {
-
-	.content-home{
-		height: 950px;
-	}
-
-}
-
-@media only screen and (min-width : 800px) {
-
-	.content-home{
-		height: 700px;
-	}
-
-}
 
